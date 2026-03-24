@@ -7,7 +7,7 @@ The solution includes model training, FastAPI inference/retraining endpoints, an
 
 ## Dataset Source
 Kaggle:  
-`https://www.kaggle.com/datasets/grandmaster07/student-exam-performance-dataset-analysis?resource=download`
+https://www.kaggle.com/code/lalit7881/student-exam-performance-analysis/input
 
 ## Project Structure
 ```text
