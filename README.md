@@ -1,6 +1,5 @@
-# Summative Mobile App Regression Analysis
 
-## Mission and Problem (4 lines max)
+## Mission and Problem statement
 This project predicts student exam performance from academic and lifestyle factors.  
 The goal is to identify patterns affecting exam score outcomes and support early intervention.  
 It applies regression modeling, API deployment, and mobile integration for end-to-end prediction.  
@@ -94,7 +93,4 @@ Add your YouTube video here after upload:
 
 - `https://youtube.com/<your-video-link>`
 
-## Notes for Evaluator
-- Public Swagger endpoint is live and routable (not localhost).
-- API includes retraining capability for deployment updates.
-- Mobile app consumes deployed API endpoint and displays predictions/errors clearly.
+
