@@ -65,8 +65,8 @@ uvicorn prediction:app --host 0.0.0.0 --port 8000 --reload
 - `POST /retrain/stream` (streamed JSON retraining)
 
 ### Public API and Swagger UI
-- Base URL: `https://student-score-hbkk.onrender.com`
-- Swagger UI: `https://student-score-hbkk.onrender.com/docs`
+- Base URL: https://student-score-hbkk.onrender.com
+- Swagger UI: https://student-score-hbkk.onrender.com/docs
 
 ## Task 3 - Flutter Mobile App
 Flutter code: `summative/FlutterApp/lib/main.dart`
@@ -78,7 +78,7 @@ Flutter code: `summative/FlutterApp/lib/main.dart`
 - Result/error display area
 - Input validation for missing values, datatype, and range
 - API integration using:
-  - Base URL: `https://student-score-hbkk.onrender.com`
+  - Base URL: https://student-score-hbkk.onrender.com
   - Endpoint: `/predict`
 
 ### Local Run Instructions (Flutter)
