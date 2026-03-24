@@ -1,6 +1,5 @@
-# Summative Mobile App Regression Analysis
 
-## Mission and Problem (4 lines max)
+## Mission and Problem statement
 This project predicts student exam performance from academic and lifestyle factors.  
 The goal is to identify patterns affecting exam score outcomes and support early intervention.  
 It applies regression modeling, API deployment, and mobile integration for end-to-end prediction.  
@@ -8,7 +7,7 @@ The solution includes model training, FastAPI inference/retraining endpoints, an
 
 ## Dataset Source
 Kaggle:  
-`https://www.kaggle.com/datasets/grandmaster07/student-exam-performance-dataset-analysis?resource=download`
+https://www.kaggle.com/code/lalit7881/student-exam-performance-analysis/input
 
 ## Project Structure
 ```text
@@ -66,8 +65,8 @@ uvicorn prediction:app --host 0.0.0.0 --port 8000 --reload
 - `POST /retrain/stream` (streamed JSON retraining)
 
 ### Public API and Swagger UI
-- Base URL: `https://student-score-hbkk.onrender.com`
-- Swagger UI: `https://student-score-hbkk.onrender.com/docs`
+- Base URL: https://student-score-hbkk.onrender.com
+- Swagger UI: https://student-score-hbkk.onrender.com/docs
 
 ## Task 3 - Flutter Mobile App
 Flutter code: `summative/FlutterApp/lib/main.dart`
@@ -79,7 +78,7 @@ Flutter code: `summative/FlutterApp/lib/main.dart`
 - Result/error display area
 - Input validation for missing values, datatype, and range
 - API integration using:
-  - Base URL: `https://student-score-hbkk.onrender.com`
+  - Base URL: https://student-score-hbkk.onrender.com
   - Endpoint: `/predict`
 
 ### Local Run Instructions (Flutter)
@@ -94,7 +93,4 @@ Add your YouTube video here after upload:
 
 - `https://youtube.com/<your-video-link>`
 
-## Notes for Evaluator
-- Public Swagger endpoint is live and routable (not localhost).
-- API includes retraining capability for deployment updates.
-- Mobile app consumes deployed API endpoint and displays predictions/errors clearly.
+
