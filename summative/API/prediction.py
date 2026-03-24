@@ -13,11 +13,15 @@ from sklearn.linear_model import LinearRegression
 
 app = FastAPI(
     title="Student Exam Score Regression API",
-    description="Predict exam scores and retrain a linear regression model.",
+    description="Predicting exam scores and retraining a linear regression model.",
     version="1.0.0",
 )
 
-origins = ["*"]
+origins = [
+       "https://student-score-hbkk.onrender.com",
+       "http://127.0.0.1:8000",
+       "http://localhost:8000",
+       ]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -38,7 +42,7 @@ FEATURES = [
 TARGET = "Exam_Score"
 model = None
 
-
+ #api codes
 class StudentData(BaseModel):
     Attendance: float = Field(..., ge=0, le=100)
     Sleep_Hours: float = Field(..., ge=0, le=24)
@@ -99,7 +103,7 @@ def home() -> dict:
     return {"message": "Student Exam Score API is running"}
 
 
-@app.post("/predict")
+@app.post("/predict")# for predicting 
 def predict(data: StudentData) -> dict:
     if model is None:
         raise HTTPException(
@@ -121,7 +125,7 @@ def predict(data: StudentData) -> dict:
     return {"predicted_exam_score": round(prediction, 4)}
 
 
-@app.post("/retrain/upload")
+@app.post("/retrain/upload")# for uploading
 async def retrain_from_upload(file: UploadFile = File(...)) -> dict:
     if not file.filename.lower().endswith(".csv"):
         raise HTTPException(status_code=400, detail="Only CSV files are supported.")
