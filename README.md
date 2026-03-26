@@ -81,6 +81,9 @@ Flutter code: `summative/FlutterApp/lib/main.dart`
   - Base URL: https://student-score-hbkk.onrender.com
   - Endpoint: `/predict`
 
+Link to the screenshot    
+ https://github.com/h-mutumwinka/linear_regression_model/blob/main/summative/FlutterApp/Screenshot%202026-03-24%20173134.png
+ 
 ### Local Run Instructions (Flutter)
 ```bash
 cd summative/FlutterApp
