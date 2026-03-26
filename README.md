@@ -61,12 +61,12 @@ uvicorn prediction:app --host 0.0.0.0 --port 8000 --reload
   - `Physical_Activity`: 0-10
 
 ### Model Update Endpoints
-- `POST /retrain/upload` (CSV upload retraining)
-- `POST /retrain/stream` (streamed JSON retraining)
+- `POST /retrain/upload` for CSV upload retraining
+- `POST /retrain/stream` for streamed JSON retraining
 
 ### Public API and Swagger UI
 - Base URL: https://student-score-hbkk.onrender.com
-- Swagger UI: https://student-score-hbkk.onrender.com/docs
+- Public Swagger UI: https://student-score-hbkk.onrender.com/docs
 
 ## Task 3 - Flutter Mobile App
 Flutter code: `summative/FlutterApp/lib/main.dart`
@@ -91,9 +91,9 @@ flutter pub get
 flutter run
 ```
 
-## Task 4 - Video Demo Link
-Add your YouTube video here after upload:
+## Task 4 - Yotube Video Demo Link
 
-- `https://youtube.com/<your-video-link>`
+https://youtu.be/3xVqcAKHug4
+
 
 
