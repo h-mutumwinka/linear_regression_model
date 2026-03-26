@@ -16,7 +16,7 @@ app = FastAPI(
     description="Predicting exam scores and retraining a linear regression model.",
     version="1.0.0",
 )
-
+#CORS
 origins = [
        "https://student-score-hbkk.onrender.com",
        "http://127.0.0.1:8000",
@@ -95,7 +95,7 @@ def startup_event() -> None:
     try:
         _load_model_from_disk()
     except FileNotFoundError:
-        # The retrain endpoints can initialize the model if the file is absent.
+    
         pass
 
 
